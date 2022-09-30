@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+.close {
+    display: none;
+}
+.section-one {
+    height: 100vh;
+    background: linear-gradient(rgba(7, 7, 7, 0.9), rgba(5, 5, 5, 0.7)), url(image/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.toogle {
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    height: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.toogle.fixed{
+    background: #fff;
+}
+.toogle span {
+    width: 100%;
+    height: 3px;
+    background: crimson;
+    transition: all 0.5s ease;
+}
+.toogle .toogle-span:hover{
+    width: 50%;
+}
+.start {
+    font-size: 2rem;
+    color: crimson;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.start.fixed {
+    color: black;
+}
+.start span {
+    color: white;
+}
+.list {
+    display: flex;
+    margin-top: 15px;
+}
+nav.fixed {
+    position: fixed;
+    background: crimson;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.list li {
+    margin-right: 40px;
+}
+li {
+    list-style: none;
+}
+.list li a {
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.list li a::after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    display: block;
+    background: crimson;
+    margin: auto;
+    transition: all 0.5s ease 0s;
+    border-radius: 20px;
+}
+.list li a:hover::after {
+    width: 100%;
+}
+.list li a:hover.fixed {
+    color: #000;
+}
+.home a::after {
+    content: "";
+    height: 5px;
+    display: block;
+    width: 100% !important;
+    background: crimson;
+    margin: auto;
+    transition: all 0.5s ease 0s;
+    border-radius: 20px;
+}
+.words {
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.first-word {
+    color: crimson;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+.second-word {
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 6rem;
+    text-align: center;
+}
+.third-word {
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+.butt {
+    text-align: center;
+}
+
+.butt li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 10px;
+    transition: all 0.5s ease 0s;
+    width: 250px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    transition: all 0.5s ease 0s;
+}
+.butt li a:hover {
+    background-color: crimson;
+}
+
+.section-two {
+    padding-top: 30px;
+}
+.head h3 {
+    color: black;
+    font-size: 2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+head h3::after {
+    content: "";
+    height: 5px;
+    width: 12%;
+    display: block;
+    background: crimson;
+    margin: auto;
+}
+.sents {
+    display: flex;
+    margin-left: 300px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.sents img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.sents p {
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+.body-sents {
+    display: flex;
+    margin-left: 300px;
+    padding-right: 250px;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.body-h {
+    font-size: 1.5rem;
+    color: crimson;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 20px;
+}
+.body-p {
+    font-size: 1.1rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.set-of-p p {
+    margin-bottom: 20px;
+    font-family: "Courier New", Courier, monospace;
+}
+.cont {
+    width: 500px;
+    height: 7px;
+    margin-bottom: 30px;
+    display: flex;
+    background: rgb(182, 181, 181);
+    border-radius: 5px;
+}
+.one span {
+    width: 35%;
+    height: 7px;
+    position: absolute;
+    background: black;
+    border-radius: 5px;
+}
+.two span {
+    width: 25%;
+    height: 7px;
+    position: absolute;
+    background: black;
+    border-radius: 5px;
+}
+.three span {
+    width: 20%;
+    height: 7px;
+    position: absolute;
+    background: black;
+    border-radius: 5px;
+}
+.cont p {
+    margin-left: 520px;
+    background-color: black;
+    color: white;
+    margin-top: -8px;
+    height: 20px;
+    padding: 2px;
+}
+.body-third {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.body-third li a {
+    color: black;
+    font-size: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+.body-third li a:hover {
+    border: 5px solid crimson;
+    color: crimson;
+}
+.img-sect {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+.img-sect img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.5s ;
+    padding: 10px;
+}
+.img-sect img:hover {
+    background: crimson;
+}
+.section-three .head {
+    padding-top: 20px;
+}
+.head h3::after {
+    content: "";
+    height: 5px;
+    width: 12%;
+    display: block;
+    background: crimson;
+    margin: auto;
+}
+.tes {
+    display: flex;
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+.content {
+    width: 300px;
+    height: 350px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background: crimson;
+    padding: 10px;
+
+}
+.content img {
+    width: 100px;
+    object-fit: cover;
+    position: relative;
+    left: 30%;
+    top: -50px;
+    border-radius: 50%;
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(27, 26, 26);
+    border-image: initial;
+}
+.content h3, .content p {
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.section-four {
+    padding-top: 40px;
+    background: rgb(27, 26, 26);
+}
+.section-four .head h3 {
+    color: rgb(255, 255, 255);
+}
+.fas {
+    margin-left: 45px;
+    margin-bottom: 20px;
+}
+.fa-star, .fa-star-half-stroke {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 5px;
+}
+.content h3, .content p {
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.section-five {
+    padding-top: 40px;
+    background: crimson;
+    padding-bottom: 30px;
+}
+.section-five .head h3 {
+    color: white;
+}
+.section-five .head p {
+    color: white;
+}
+.section-five .head h3::after {
+    background: black;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 70px;
+}
+
+.me {
+    background: black;
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.me i{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    margin-left: 40%;
+    padding-top: 20px;
+}
+.me p {
+    color: white;
+    text-align: center;
+}
+.me h3 {
+    color: crimson;
+    text-align: center;
+}
+
+footer {
+    background: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+.wordss {
+    display: flex;
+    margin-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.wordss p {
+    color: rgb(157, 158, 158);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.wordss span {
+    color: crimson;
+}
+.spac {
+    width: 2px;
+    height: 13px;
+    background: rgb(241, 243, 240);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer i {
+    color: white;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+footer i:hover {
+    color: crimson;
+}
+footer ul {
+    display: flex;
+    margin-right: 06px;
+}
+
+.back li {
+    text-align: center;
+    list-style: none;
+}
+.back li a {
+    color: #fff;
+    background: crimson;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.5s;
+}
+
+.back li a:hover{
+    color: crimson;
+    background: #fff;
+}
+
